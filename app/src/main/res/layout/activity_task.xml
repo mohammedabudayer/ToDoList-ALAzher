@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    tools:context=".TaskActivity">
+
+    <LinearLayout
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/btn_Back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:padding="8dp"
+            android:src="@drawable/ic_arrow_back" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/view_task"
+            android:gravity="center"
+            android:textColor="#2B2A2A"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/btn_Edit"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/edit"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:paddingStart="16dp"
+        android:paddingTop="36dp"
+        android:paddingEnd="16dp"
+        android:orientation="vertical"
+        android:background="#DAD5D5">
+
+        <EditText
+            android:id="@+id/et_Task_Title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+            android:textColor="#2B2A2A" />
+
+        <TextView
+            android:id="@+id/tv_Date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/_30_Dec_00"
+            android:textColor="#2B2A2A"
+            android:textSize="20dp"/>
+
+        <View
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="#E5E5E5" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/description"
+            android:textColor="#2B2A2A"
+            android:textSize="24sp" />
+
+        <EditText
+            android:id="@+id/et_Task_Description"
+            android:layout_marginTop="16dp"
+            android:textSize="20sp"
+
+            android:textColor="#2B2A2A"
+            android:text="@string/interaction"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:gravity="start" />
+
+        <TextView
+            android:id="@+id/tv_Delete_Task"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="36dp"
+            android:text="@string/delete"
+            android:textColor="#0B0A0A"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+</LinearLayout>
